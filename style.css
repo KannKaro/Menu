@@ -1,6 +1,6 @@
 body {
     display: flex;
-    background-color: #FFFAFA;
+    background-color: #FEF9E7;
     flex-direction: column;
     line-height: 1.5;
 }
@@ -49,4 +49,86 @@ body {
   transition-duration: 0.5s;
   background-color: #FFA07A;
   }
- 
+ .photo {
+    object-fit: cover;
+    height: 200px;
+    border: 0.20rem solid;
+    border-radius: 30px;
+    border-color: #c4706d;
+ }
+ .item-info header {
+    display: flex;
+    justify-content: space-between;
+ }
+ .item-info h4 {
+    margin-bottom: 0.5rem;
+  }
+  .price {
+    color: #212F3D;
+  }
+  .item-info {
+    margin-bottom: 0;
+    padding-top: 1rem;
+  }
+  .breakfast {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+  }
+  .lunch {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+  }
+  .desserts {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    .breakfast {
+      grid-template-columns: 225px 1fr;
+      gap: 0 1.25rem;
+      max-width: 40rem;
+    }
+    .lunch {
+        grid-template-columns: 225px 1fr;
+        gap: 0 1.25rem;
+        max-width: 40rem;
+      }
+      .desserts {
+        grid-template-columns: 225px 1fr;
+        gap: 0 1.25rem;
+        max-width: 40rem;
+      }
+    .photo {
+        height: 175px;
+      }
+}
+@media screen and (min-width: 1200px) {
+    .img-container {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
